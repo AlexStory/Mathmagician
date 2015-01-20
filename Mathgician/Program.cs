@@ -26,7 +26,8 @@ namespace Mathgician {
           System.Threading.Thread.Sleep(100);
         }
       } if (desiredMaths == "Primes") {
-        int start = 2;
+        int start = 3;
+        Console.WriteLine(2);
         while (true) {
           bool prime = true;
           for (int i = start / 2; i > 1; i--) {
@@ -38,7 +39,7 @@ namespace Mathgician {
           if (prime == true) {
             Console.WriteLine(start);
           }
-          start += 1;
+          start += 2;
           System.Threading.Thread.Sleep(50);
         }
       }
