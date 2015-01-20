@@ -25,20 +25,21 @@ namespace Mathgician {
           current = newNum;
           System.Threading.Thread.Sleep(100);
         }
-      } if (desiredMaths == "Prime") {
+      } if (desiredMaths == "Primes") {
         int start = 2;
         while (true) {
           bool prime = true;
-          for (int i = start - 1; i > 1; i--) {
+          for (int i = start / 2; i > 1; i--) {
             if (start % i == 0) {
               prime = false;
+              break;
             }
           }
           if (prime == true) {
             Console.WriteLine(start);
           }
           start += 1;
-          System.Threading.Thread.Sleep(100);
+          System.Threading.Thread.Sleep(50);
         }
       }
 
