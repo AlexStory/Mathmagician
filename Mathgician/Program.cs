@@ -10,7 +10,7 @@ namespace Mathgician {
       Console.WriteLine("I am the Mathgician");
       Console.WriteLine("What Shall I Math?");
       Console.WriteLine("Fibonacci, Primes, or Integers?");
-      string desiredMaths = Console.ReadLine();
+      var desiredMaths = Console.ReadLine();
       Console.WriteLine("Ok, I'm gonna do some " + desiredMaths);
 
       if (desiredMaths == "Integers") {
